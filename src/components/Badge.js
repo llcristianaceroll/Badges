@@ -4,7 +4,7 @@ import confLogo from '../images/badge-header.svg';
 
 
 class Badge extends React.Component {
-    render() {
+    render() {    
         return (
             <div className="Badge">
                 <div className="Badge__header">
@@ -12,20 +12,18 @@ class Badge extends React.Component {
                 </div>
 
                 <div className="Badge__section-name">
-                    <img  className="Badge__avatar" src="https://media-exp1.licdn.com/dms/image/C4E03AQGlasG70LC_kg/profile-displayphoto-shrink_800_800/0/1619050770031?e=1626912000&v=beta&t=xxIbqsmApJFV__9zpcQ8jknvamXMv-Olp7XmHeoOhf8" alt= "Avatar"/>
-                    <h1>Cristian <br/> Acero</h1>
+                    <img  className="Badge__avatar" src={this.props.avatarUrl} alt= "Avatar"/>
+                    <h1>{this.props.firstName} <br/> {this.props.lastName}</h1>
                 </div>
                 <div className="Badge__section-info">
-                    <h3>Frontend Engineer</h3>
-                    <div>@llcristianll</div>
+                    <h3>{this.props.jobTitle}</h3>
+                    <div>@{this.props.twitter}</div>
                 </div>
 
                 <div className="Badge__footer">
                     #platziconf
                 </div>
-            </div>
-            
-        
+            </div>                   
         )
     }
 

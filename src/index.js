@@ -14,4 +14,12 @@ import Badge from './components/Badge';
  const container = document.getElementById('app');
 
 // ReactDOM.render(__qué__, __dónde__);
-ReactDOM.render(<Badge />, container);
+ReactDOM.render(
+   <Badge 
+    firstName = 'Cristian' 
+    lastName = 'Acero'
+    avatarUrl= "https://media-exp1.licdn.com/dms/image/C4E03AQGlasG70LC_kg/profile-displayphoto-shrink_800_800/0/1619050770031?e=1626912000&v=beta&t=xxIbqsmApJFV__9zpcQ8jknvamXMv-Olp7XmHeoOhf8"
+    jobTitle="Frontend Engineer"
+    twitter="lcristianl"
+   />, 
+    container);
